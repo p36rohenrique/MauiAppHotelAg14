@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotelTransilvania.Sobre"
+             Title="Sobre">
+    <VerticalStackLayout Margin="10"
+                         Padding="10">
+        <Label 
+            Text="Projeto de Hospedagem em Hotel"
+            TextColor="{StaticResource Secondary}"
+            FontFamily="OswaldRegular"
+            FontSize="28"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label Text="Desenvolvido por Pedro Henrique de Oliveira Nunes em 2024, com ajuda das aulas do Curso de Desenvolvimento de Sistemas da EaDTEC."
+               TextColor="{StaticResource Primary}"
+               FontFamily="ItimRegular"
+               FontSize="20"
+               />
+    </VerticalStackLayout>
+</ContentPage>

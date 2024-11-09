@@ -127,7 +127,8 @@
                 <Button Text="Avançar"
                         FontFamily="OswaldRegular"
                         FontSize="25"
-                        BackgroundColor="{StaticResource Secondary}"/>
+                        BackgroundColor="{StaticResource Secondary}"
+                        Clicked="Avanco"/>
 
             </VerticalStackLayout>
             
