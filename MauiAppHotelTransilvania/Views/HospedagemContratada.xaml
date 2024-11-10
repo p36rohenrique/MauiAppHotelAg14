@@ -24,7 +24,7 @@
                            TextColor="{StaticResource Primary}"
                            FontFamily="ItimRegular"
                            FontSize="20"/>
-                    <Label Text="2 "
+                    <Label Text="X "
                            TextColor="{StaticResource Quad}"
                            FontFamily="OswaldRegular"
                            FontSize="18"/>
@@ -37,7 +37,7 @@
                            TextColor="{StaticResource Primary}"
                            FontFamily="ItimRegular"
                            FontSize="20"/>
-                    <Label Text="2 "
+                    <Label Text="X "
                            TextColor="{StaticResource Quad}"
                            FontFamily="OswaldRegular"
                            FontSize="18"/>
@@ -78,21 +78,21 @@
 
                 <Label Grid.Row="1"
                        Grid.Column="0"
-                       Text="01/11/2024"
+                       Text="dd/mm/aaaa"
                        TextColor="{StaticResource Quad}"
                        FontFamily="ItimRegular"
                        FontSize="15"/>
 
                 <Label Grid.Row="2"
                        Grid.Column="1"
-                       Text="30/11/2024"
+                       Text="dd/mm/aaaa"
                        TextColor="{StaticResource Quad}"
                        FontFamily="ItimRegular"
                        FontSize="15"/>
 
                 <Label Grid.Row="3"
                        Grid.Column="2"
-                       Text="29"
+                       Text="xx"
                        TextColor="{StaticResource Quad}"
                        FontFamily="ItimRegular"
                        FontSize="15"/>
@@ -111,7 +111,7 @@
                        TextColor="{StaticResource Primary}"
                        FontFamily="OswaldRegular"
                        FontSize="20"/>
-                <Label Text="R$500,00"
+                <Label Text="R$X"
                        TextColor="{StaticResource Quad}"
                        FontFamily="ItimRegular"
                        FontSize="25"/>
@@ -126,6 +126,13 @@
                 FontSize="25"
                 BackgroundColor="{StaticResource Secondary}"
                 Clicked="Button_Clicked"/>
+
+        <Button Margin="10"
+                Text="Sobre"
+                FontFamily="OswaldRegular"
+                FontSize="25"
+                BackgroundColor="{StaticResource Secondary}"
+                Clicked="Sobre"/>
 
     </VerticalStackLayout>
     

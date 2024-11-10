@@ -2,10 +2,17 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotelTransilvania.Sobre"
+             NavigationPage.HasNavigationBar="false"
              Title="Sobre">
     <VerticalStackLayout Margin="10"
                          Padding="10">
-        <Label 
+        
+        <Frame BackgroundColor="#404040"
+               Margin="10"
+               Padding="10">
+            <VerticalStackLayout>
+
+            <Label 
             Text="Projeto de Hospedagem em Hotel"
             TextColor="{StaticResource Secondary}"
             FontFamily="OswaldRegular"
@@ -18,5 +25,18 @@
                FontFamily="ItimRegular"
                FontSize="20"
                />
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Margin="10"
+                Padding="10"
+                Text="Voltar ao Início"
+                BackgroundColor="{StaticResource Secondary}"
+                FontSize="25"
+                FontFamily="OswaldRegular"
+                Clicked="Inicio"/>
+
     </VerticalStackLayout>
+    
 </ContentPage>

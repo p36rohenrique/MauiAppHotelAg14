@@ -18,4 +18,16 @@ public partial class HospedagemContratada : ContentPage
 			DisplayAlert("Ops", ex.Message, "Ok");
 		}
     }
+
+    private void Sobre(object sender, EventArgs e)
+    {
+        try
+        {
+            Navigation.PushAsync(new Sobre());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("Ops", ex.Message, "Ok");
+        }
+    }
 }
