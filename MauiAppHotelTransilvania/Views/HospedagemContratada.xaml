@@ -2,11 +2,131 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiAppHotelTransilvania.Views.HospedagemContratada"
-             Title="HospedagemContratada">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource Tertiary}">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="Suíte"
+               TextColor="{StaticResource Secondary}"
+               FontFamily="OswaldRegular"
+               FontSize="50"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10"
+               BackgroundColor="#404040"
+               BorderColor="Transparent">
+
+            <HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+
+                    <Label Text="Adultos: "
+                           TextColor="{StaticResource Primary}"
+                           FontFamily="ItimRegular"
+                           FontSize="20"/>
+                    <Label Text="2 "
+                           TextColor="{StaticResource Quad}"
+                           FontFamily="OswaldRegular"
+                           FontSize="18"/>
+
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout>
+
+                    <Label Text="Crianças: "
+                           TextColor="{StaticResource Primary}"
+                           FontFamily="ItimRegular"
+                           FontSize="20"/>
+                    <Label Text="2 "
+                           TextColor="{StaticResource Quad}"
+                           FontFamily="OswaldRegular"
+                           FontSize="18"/>
+
+                </HorizontalStackLayout>
+
+            </HorizontalStackLayout>
+            
+        </Frame>
+
+        <Frame Margin="10"
+               BackgroundColor="#404040"
+               BorderColor="Transparent">
+
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+
+                <Label Grid.Row="0"
+                       Grid.Column="0"
+                       Text="Check-in: "
+                       TextColor="{StaticResource Primary}"
+                       FontFamily="OswaldRegular"
+                       FontSize="20"/>
+
+                <Label Grid.Row="0"
+                       Grid.Column="1"
+                       Text="Check-out: "
+                       TextColor="{StaticResource Primary}"
+                       FontFamily="OswaldRegular"
+                       FontSize="20"/>
+
+                <Label Grid.Row="0"
+                       Grid.Column="2"
+                       Text="Estadia: "
+                       TextColor="{StaticResource Primary}"
+                       FontFamily="OswaldRegular"
+                       FontSize="20"/>
+
+                <Label Grid.Row="1"
+                       Grid.Column="0"
+                       Text="01/11/2024"
+                       TextColor="{StaticResource Quad}"
+                       FontFamily="ItimRegular"
+                       FontSize="15"/>
+
+                <Label Grid.Row="2"
+                       Grid.Column="1"
+                       Text="30/11/2024"
+                       TextColor="{StaticResource Quad}"
+                       FontFamily="ItimRegular"
+                       FontSize="15"/>
+
+                <Label Grid.Row="3"
+                       Grid.Column="2"
+                       Text="29"
+                       TextColor="{StaticResource Quad}"
+                       FontFamily="ItimRegular"
+                       FontSize="15"/>
+
+            </Grid>
+
+        </Frame>
+
+        <Frame Margin="10"
+               BackgroundColor="#404040"
+               BorderColor="Transparent">
+
+            <HorizontalStackLayout>
+
+                <Label Text="Valor: "
+                       TextColor="{StaticResource Primary}"
+                       FontFamily="OswaldRegular"
+                       FontSize="20"/>
+                <Label Text="R$500,00"
+                       TextColor="{StaticResource Quad}"
+                       FontFamily="ItimRegular"
+                       FontSize="25"/>
+
+            </HorizontalStackLayout>
+            
+        </Frame>
+
+        <Button Margin="10"
+                Text="Voltar"
+                FontFamily="OswaldRegular"
+                FontSize="25"
+                BackgroundColor="{StaticResource Secondary}"
+                Clicked="Button_Clicked"/>
+
     </VerticalStackLayout>
+    
 </ContentPage>
